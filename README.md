@@ -21,7 +21,7 @@ Build
 Run
 
 ```bash
-  docker run --rm --name landmarks -p 8888:8888 -it landmarks
+  docker run --rm --name landmarks -p 8000:8000 -it landmarks
 ```
 
 Create superuser

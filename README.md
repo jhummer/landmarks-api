@@ -8,6 +8,18 @@ Wagtail CMS + API for Landmarks.
 
 ## Deployment
 
+Landmarks can be run via Docker or in a virtual environment as described below
+
+Running a Docker container:
+
+```bash
+  docker build -t landmarks .
+```
+
+```bash
+  docker run --rm --name landmarks -p 8888:8888 -it landmarks
+```
+
 
 Install dependencies (preferably in a virtual environment)
 

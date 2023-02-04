@@ -10,16 +10,33 @@ Wagtail CMS + API for Landmarks.
 
 Landmarks can be run via Docker or in a virtual environment as described below
 
-Running a Docker container:
+### Run a Docker container:
+
+Build
 
 ```bash
   docker build -t landmarks .
 ```
 
+Run
+
 ```bash
   docker run --rm --name landmarks -p 8888:8888 -it landmarks
 ```
 
+Create superuser
+
+```bash
+  docker exec -it landmarks python manage.py createsuperuser
+```
+
+### Run in virtual environment
+
+Create a virtual environment named `venv` and activate it
+
+```bash
+  python3 -m venv venv && source venv/bin/activate
+```
 
 Install dependencies (preferably in a virtual environment)
 
